@@ -2,7 +2,7 @@ import React from "react";
 
 const Experience = (props) => {
   return (
-    <div className={`${props.space}"col-sm-6 timeline-item"`}>
+    <div className={`${props.position == "right" && props.alone && "col-sm-offset-6"} col-sm-6 timeline-item`}>
       <div className="row">
         <div className={`${props.position == "right" && "col-sm-offset-1"} col-sm-11`}>
           <div className={`timeline-panel ${props.position == 'left' ? "credits" : "debits"}` }>

@@ -34,7 +34,7 @@ const Experiences = () => {
               sDate="18/02/2014"
               eDate="Present" 
               position="left"
-              space=""
+              alone={false}
             />
 
             <Experience
@@ -44,7 +44,7 @@ const Experiences = () => {
               sDate="18/02/2014"
               eDate="Present"
               position="right"
-              space=""
+              alone={false}
             />
           </div>
 
@@ -59,35 +59,8 @@ const Experiences = () => {
               sDate="10/03/2013"
               eDate="18/02/2014"
               position="right"
-              space=""
+              alone={true}
             />
-            {/* <div className="col-sm-offset-6 col-sm-6 timeline-item">
-              <div className="row">
-                <div className="col-sm-offset-1 col-sm-11">
-                  <div className="timeline-panel debits">
-                    <ul className="timeline-panel-ul">
-                      <li>
-                        <span className="importo">Mussum ipsum cacilds</span>
-                      </li>
-                      <li>
-                        <span className="causale">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit.
-                        </span>
-                      </li>
-                      <li>
-                        <p>
-                          <small className="text-muted">
-                            10/03/2013 - 18/02/2014
-                          </small>
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-
             <div className="col-sm-6 timeline-item">
               <div className="row">
                 <div className="col-sm-11">
@@ -118,59 +91,24 @@ const Experiences = () => {
           <div className="row timeline-movement">
             <TimelineBatch month="Jan" year="2010" />
 
-            <div className="col-sm-offset-6 col-sm-6 timeline-item">
-              <div className="row">
-                <div className="col-sm-offset-1 col-sm-11">
-                  <div className="timeline-panel debits">
-                    <ul className="timeline-panel-ul">
-                      <li>
-                        <span className="importo">Mussum ipsum cacilds</span>
-                      </li>
-                      <li>
-                        <span className="causale">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit.
-                        </span>
-                      </li>
-                      <li>
-                        <p>
-                          <small className="text-muted">
-                            11/01/2010 - 10/03/2013
-                          </small>
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-sm-6 timeline-item">
-              <div className="row">
-                <div className="col-sm-11">
-                  <div className="timeline-panel credits">
-                    <ul className="timeline-panel-ul">
-                      <li>
-                        <span className="importo">Mussum ipsum cacilds</span>
-                      </li>
-                      <li>
-                        <span className="causale">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit.
-                        </span>
-                      </li>
-                      <li>
-                        <p>
-                          <small className="text-muted">
-                            11/01/2010 - 10/03/2013
-                          </small>
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Experience
+              title="Mussum ipsum cacilds"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit."
+              sDate="11/01/2010"
+              eDate="10/03/2013"
+              position="right"
+              alone={true}
+            />
+            <Experience
+              title="Mussum ipsum cacilds"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit."
+              sDate="11/01/2010"
+              eDate="10/03/2013" 
+              position="left"
+              alone={false}
+            />
           </div>
         </div>
       </div>
